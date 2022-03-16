@@ -60,7 +60,7 @@ def process(xmlfiles, videofiles):
                 img_size = width*height
                 if img_size<1200: continue
                 crop_frame = frame.crop((xtl, ytl, xbr, ybr))
-                path = f'C:/Users/User/Desktop/kuartis/kgoz/dataset'
+                path = 'dataset'
                 crop_frame.save(os.path.join(path , f'{str(i)}.png'))
                 for attr in box.iter('attribute'):
                     attr_name = attr.get('name')
